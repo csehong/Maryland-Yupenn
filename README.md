@@ -1,6 +1,6 @@
 # Maryland-Yupenn
 
-![Alt text](Maryland-Yupenn Samples.pdf)
+![Alt text](Maryland_Yupenn_Samples.png)
 
 
 ====
