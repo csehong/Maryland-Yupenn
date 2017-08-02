@@ -1,42 +1,28 @@
 # Maryland-Yupenn
 
-SSPP-DAN in Tensorflow
+![Alt text](./figure/DAN.PNG)
+
+
 ====
+<Maryland-Yupenn Dataset Description>
 
-Tensorflow implementation of [SSPP-DAN: Deep Domain Adaptation Network for Face Recognition with Single Sample Per Person](https://arxiv.org/abs/1702.04069)
+While static scene datasets have been extensively introduced, only two public datasets exist for dynamic scenes. To address this lack, we constructed a dataset that includes 23 dynamic scene classes with 10 videos per 215 class by combining the Maryland and Yupenn datasets. 
 
-![Alt text](./figure/overallflow.PNG)
+Because the number of sequences in each class differs between Maryland (10) and Yupenn (14), we selected 10 random sequences per each class in both datasets. 
 
-Prerequisites
--------------
-* [Python 2.7](https://www.python.org/downloads/)
-* [Tensorflow 0.12](https://www.tensorflow.org/versions/r0.12/)
-* [OpenCV 2.4.9](http://opencv.org/releases.html)
-* [NumPy](http://www.numpy.org/)
-* [SciPy](https://www.scipy.org/install.html)
+For those classes that exist in both datasets, such as "Forest Fire," "Fountain," and "Waterfall", five random sequences were extracted from each dataset and combined. We additionally incorporated "Smooth Traffc" in Maryland and "Highway" in Yupenn because they have very similar appearances and motion. 
 
-Usage
--------------
-
-First, download the [dataset](https://drive.google.com/uc?id=0ByHRRxErVc0NRjFzTXhRSUlyZlU&export=download) or the [pickle files](https://drive.google.com/uc?id=0ByHRRxErVc0NNFFINFJ2MXlvTGs&export=download
-) that we have already created from our repository. After all pickle files are download, move them into the SSPP-DAN/data folder.
-
-To train a model with downloaded dataset:
-```
-$ python train_model.py --learning_rate=1e-5 --batch_size=50 --save_step=100
-```
-
-To test with an existing model:
-```
-$ python test_model.py --summaries_dir 'expr/F3D_30_60_FC6_FC6' --test_batch_size=50
-```
+NOTE: If you use the Maryland–Yupenn dataset, please cite these works:
+[1] Shroff, Nitesh, Pavan Turaga, and Rama Chellappa. "Moving vistas: Exploiting motion for describing scenes." Computer Vision and Pattern Recognition (CVPR), 2010 IEEE Conference on. IEEE, 2010.
+[2] Derpanis, Konstantinos G., et al. "Dynamic scene understanding: The role of orientation features in space and time in scene classification." Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on. IEEE, 2012.
+[3] Hong, Sungeun, et al. "Recognizing Dynamic Scenes with Deep Dual Descriptor based on Key Frames and Key Segments." arXiv preprint arXiv:1702.04479 (2017).
 
 Results
 -------------
 Facial feature space (left) and its embedding space after applying DA (right). The subscript “s” and “t” in the
 legend refer to the source and target domains, respectively.
 
-![Alt text](./figure/DAN.PNG)
+
 
 
 
