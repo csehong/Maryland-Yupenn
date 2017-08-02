@@ -4,11 +4,11 @@
 
 Description
 ------------
-While static scene datasets have been extensively introduced, only two public datasets exist for dynamic scenes. To address this lack, we constructed a dataset that includes 23 dynamic scene classes with 10 videos per 215 class by combining the Maryland and Yupenn datasets. 
+While static scene datasets have been extensively introduced, only two public datasets exist for dynamic scenes. To address this short coming, we construct a dataset that includes 23 dynamic scene classes with 10 videos per class by combining the Maryland and Yupenn datasets. 
 
-Because the number of sequences in each class differs between Maryland (10) and Yupenn (14), we selected 10 random sequences per each class in both datasets. 
+Because the number of sequences in each class differs between Maryland (10) and Yupenn (14), we select 10 random sequences from each class in both datasets. 
 
-For those classes that exist in both datasets, such as "Forest Fire," "Fountain," and "Waterfall", five random sequences were extracted from each dataset and combined. We additionally incorporated "Smooth Traffc" in Maryland and "Highway" in Yupenn because they have very similar appearances and motion. 
+For those classes that exist in both datasets, such as "Forest Fire," "Fountain," and "Waterfall", five random sequences are extracted from each dataset, and combined. We additionally incorporate "Smooth Traffc" in Maryland and "Highway" in Yupenn because they have very similar appearances and motion. 
 
 
 NOTE
