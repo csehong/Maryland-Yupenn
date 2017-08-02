@@ -10,6 +10,7 @@ Because the number of sequences in each class differs between Maryland (10) and 
 
 For those classes that exist in both datasets, such as "Forest Fire," "Fountain," and "Waterfall", five random sequences are extracted from each dataset, and combined. We additionally incorporate "Smooth Traffc" in Maryland and "Highway" in Yupenn because they have very similar appearances and motion. 
 
+download link: https://goo.gl/bGPnbu
 
 NOTE
 ------------
